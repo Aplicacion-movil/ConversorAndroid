@@ -1,5 +1,7 @@
 # Gradle files
 .gradle/
+.jdk/
+.jdk17.zip
 build/
 .kotlin/
 

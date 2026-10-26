@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="24dp"
+        android:paddingTop="40dp"
+        android:paddingEnd="24dp"
+        android:paddingBottom="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:textColor="@color/text_primary"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="@string/subtitle"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/card_background"
+            android:elevation="3dp"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                style="@style/FieldLabel"
+                android:text="@string/category_label" />
+
+            <Spinner
+                android:id="@+id/category_spinner"
+                style="@style/FieldSpinner" />
+
+            <TextView
+                style="@style/FieldLabel"
+                android:layout_marginTop="20dp"
+                android:text="@string/value_label" />
+
+            <EditText
+                android:id="@+id/value_input"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/input_background"
+                android:hint="@string/value_hint"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal|numberSigned"
+                android:maxLines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="@color/text_primary"
+                android:textColorHint="@color/text_secondary"
+                android:textSize="18sp" />
+
+            <TextView
+                style="@style/FieldLabel"
+                android:layout_marginTop="20dp"
+                android:text="@string/from_label" />
+
+            <Spinner
+                android:id="@+id/from_unit_spinner"
+                style="@style/FieldSpinner" />
+
+            <Button
+                android:id="@+id/swap_button"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="14dp"
+                android:backgroundTint="@color/secondary"
+                android:text="@string/swap"
+                android:textAllCaps="false"
+                android:textColor="@color/primary"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/FieldLabel"
+                android:layout_marginTop="14dp"
+                android:text="@string/to_label" />
+
+            <Spinner
+                android:id="@+id/to_unit_spinner"
+                style="@style/FieldSpinner" />
+
+            <Button
+                android:id="@+id/convert_button"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="24dp"
+                android:backgroundTint="@color/primary"
+                android:text="@string/convert"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/result_label"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/result_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:accessibilityLiveRegion="polite"
+            android:text="@string/result_placeholder"
+            android:textColor="@color/primary"
+            android:textIsSelectable="true"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>
