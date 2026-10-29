@@ -1,18 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Conversor</string>
-    <string name="title">Conversor</string>
-    <string name="subtitle">Convierte unidades de forma rápida y sencilla</string>
-    <string name="category_label">TIPO DE CONVERSIÓN</string>
-    <string name="value_label">VALOR</string>
-    <string name="value_hint">Introduce una cantidad</string>
-    <string name="from_label">DE</string>
-    <string name="to_label">A</string>
-    <string name="swap">⇅ Intercambiar unidades</string>
-    <string name="convert">Convertir</string>
-    <string name="result_label">RESULTADO</string>
-    <string name="result_placeholder">El resultado aparecerá aquí</string>
-    <string name="result_format">%1$s %2$s = %3$s %4$s</string>
-    <string name="value_required">Introduce un valor</string>
-    <string name="invalid_value">Introduce un número válido</string>
+    <string name="app_name">Conversor Android</string>
 </resources>

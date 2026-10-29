@@ -1,30 +1,18 @@
 # Conversor Android
 
-Aplicación Android nativa escrita en Java para convertir unidades de longitud, masa,
-temperatura y volumen.
+Proyecto Android vacío preparado como punto de partida para desarrollar la aplicación.
 
-## Características
-
-- Cuatro categorías y dieciséis unidades disponibles.
-- Conversión en ambos sentidos e intercambio rápido de unidades.
-- Admite separador decimal con punto o coma.
-- Interfaz adaptable y accesible, sin conexión a Internet.
-- Motor de conversión desacoplado y cubierto por pruebas unitarias.
+El módulo `app` no contiene actividades, pantallas ni lógica de conversión. La estructura
+Gradle y los recursos mínimos se mantienen para que el proyecto pueda abrirse y compilarse
+en Android Studio.
 
 ## Requisitos
 
 - Android Studio con JDK 17 o superior.
 - Android SDK 37.
 
-## Ejecutar el proyecto
-
-1. Abre esta carpeta desde Android Studio.
-2. Espera a que finalice la sincronización de Gradle.
-3. Selecciona un emulador o dispositivo con Android 6.0 (API 23) o superior.
-4. Ejecuta la configuración `app`.
-
-Desde la terminal también puedes compilar y probar el proyecto:
+## Compilar
 
 ```powershell
-.\gradlew.bat test assembleDebug
+.\gradlew.bat assembleDebug
 ```
