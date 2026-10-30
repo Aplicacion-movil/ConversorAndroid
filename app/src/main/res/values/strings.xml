@@ -1,4 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Conversor Android</string>
+    <string name="selection_title">Selecciona una categoría</string>
+    <string name="continue_button">Continuar</string>
+    <string name="category_image_description">Imagen de la categoría seleccionada</string>
+    <string name="category_required">Selecciona una categoría antes de continuar</string>
+    <string name="image_error">No se ha podido cargar la imagen</string>
+
+    <string name="conversion_title">Conversión: %1$s</string>
+    <string name="conversion_pending">Aquí se implementará el conversor seleccionado.</string>
+    <string name="invalid_category_title">Categoría no válida</string>
+    <string name="invalid_category">No se ha recibido una categoría válida</string>
+    <string name="back_button">Volver</string>
+
+    <string-array name="conversion_categories">
+        <item>Selecciona una categoría</item>
+        <item>Longitud</item>
+        <item>Temperatura</item>
+        <item>Masa y peso</item>
+        <item>Volumen</item>
+    </string-array>
 </resources>
