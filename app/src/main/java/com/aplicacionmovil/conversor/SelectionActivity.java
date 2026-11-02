@@ -23,7 +23,8 @@ public class SelectionActivity extends AppCompatActivity {
             R.drawable.category_temperature,
             R.drawable.category_mass,
             R.drawable.category_volume,
-            R.drawable.category_speed
+            R.drawable.category_speed,
+            R.drawable.category_time
     };
 
     private View rootView;

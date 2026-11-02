@@ -34,6 +34,7 @@
     <string name="category_mass">Masa y peso</string>
     <string name="category_volume">Volumen</string>
     <string name="category_speed">Velocidad</string>
+    <string name="category_time">Tiempo</string>
 
     <string name="unit_meter">Metro (m)</string>
     <string name="unit_kilometer">Kilómetro (km)</string>
@@ -76,5 +77,6 @@
         <item>@string/category_mass</item>
         <item>@string/category_volume</item>
         <item>@string/category_speed</item>
+        <item>@string/category_time</item>
     </string-array>
 </resources>

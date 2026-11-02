@@ -10,14 +10,9 @@ import java.util.EnumMap;
 import java.util.Map;
 
 public final class ConversionLabels {
+    private static final Map<ConversionCategory, Integer> CATEGORY_LABELS = new EnumMap<>(ConversionCategory.class);
 
-    private static final Map<ConversionCategory, Integer>
-            CATEGORY_LABELS =
-            new EnumMap<>(ConversionCategory.class);
-
-    private static final Map<ConversionUnit, Integer>
-            UNIT_LABELS =
-            new EnumMap<>(ConversionUnit.class);
+    private static final Map<ConversionUnit, Integer> UNIT_LABELS = new EnumMap<>(ConversionUnit.class);
 
     static {
         CATEGORY_LABELS.put(
@@ -39,6 +34,10 @@ public final class ConversionLabels {
         CATEGORY_LABELS.put(
                 ConversionCategory.SPEED,
                 R.string.category_speed
+        );
+        CATEGORY_LABELS.put(
+                ConversionCategory.TIME,
+                R.string.category_time
         );
 
         UNIT_LABELS.put(

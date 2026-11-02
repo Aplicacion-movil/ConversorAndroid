@@ -174,6 +174,27 @@ public enum ConversionUnit {
             ConversionCategory.SPEED,
             "mph",
             0.44704
+    ),
+
+    HOUR(
+            ConversionCategory.TIME,
+            "h",
+            0.44704
+    ),
+    MINUT(
+            ConversionCategory.TIME,
+            "m",
+            0.44704
+    ),
+    SECOND(
+            ConversionCategory.TIME,
+            "s",
+            0.44704
+    ),
+    MILISECOND(
+            ConversionCategory.TIME,
+            "ms",
+            0.44704
     );
 
     private final ConversionCategory category;
