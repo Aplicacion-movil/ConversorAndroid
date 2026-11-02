@@ -9,6 +9,7 @@ package com.aplicacionmovil.conversor.domain;
  *     <li>Temperatura: grado Celsius.</li>
  *     <li>Masa y peso: kilogramo.</li>
  *     <li>Volumen: litro.</li>
+ *     <li>Velocidad: metro por segundo.</li>
  * </ul>
  *
  * <p>En las categorías lineales, {@code factorToBase} representa
@@ -116,6 +117,22 @@ public enum ConversionUnit {
             ConversionCategory.VOLUME,
             "gal US",
             3.785411784
+    ),
+
+    METER_PER_SECOND(
+            ConversionCategory.SPEED,
+            "m/s",
+            1.0
+    ),
+    KILOMETER_PER_HOUR(
+            ConversionCategory.SPEED,
+            "km/h",
+            1.0 / 3.6
+    ),
+    MILE_PER_HOUR(
+            ConversionCategory.SPEED,
+            "mph",
+            0.44704
     );
 
     private final ConversionCategory category;

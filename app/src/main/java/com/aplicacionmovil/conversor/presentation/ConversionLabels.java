@@ -36,6 +36,10 @@ public final class ConversionLabels {
                 ConversionCategory.VOLUME,
                 R.string.category_volume
         );
+        CATEGORY_LABELS.put(
+                ConversionCategory.SPEED,
+                R.string.category_speed
+        );
 
         UNIT_LABELS.put(
                 ConversionUnit.METER,
@@ -111,6 +115,19 @@ public final class ConversionLabels {
         UNIT_LABELS.put(
                 ConversionUnit.US_GALLON,
                 R.string.unit_us_gallon
+        );
+
+        UNIT_LABELS.put(
+                ConversionUnit.METER_PER_SECOND,
+                R.string.unit_meter_per_second
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.KILOMETER_PER_HOUR,
+                R.string.unit_kilometer_per_hour
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.MILE_PER_HOUR,
+                R.string.unit_mile_per_hour
         );
     }
 
