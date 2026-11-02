@@ -13,13 +13,10 @@ import android.widget.Spinner;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.aplicacionmovil.conversor.domain.ConversionCategory;
 import com.google.android.material.snackbar.Snackbar;
 
 public class SelectionActivity extends AppCompatActivity {
-
-    public static final String EXTRA_CATEGORY =
-            "com.aplicacionmovil.conversor.extra.CATEGORY";
-
     private static final int[] CATEGORY_IMAGES = {
             0,
             R.drawable.category_length,
@@ -118,7 +115,13 @@ public class SelectionActivity extends AppCompatActivity {
     private void openConversionActivity() {
         int position = categorySpinner.getSelectedItemPosition();
 
-        if (position <= 0) {
+        ConversionCategory[] categories =
+                ConversionCategory.values();
+
+        int categoryIndex = position - 1;
+
+        if (categoryIndex < 0
+                || categoryIndex >= categories.length) {
             Snackbar.make(
                     rootView,
                     R.string.category_required,
@@ -128,16 +131,19 @@ public class SelectionActivity extends AppCompatActivity {
             return;
         }
 
-        String category = categorySpinner
-                .getSelectedItem()
-                .toString();
+        ConversionCategory category =
+                categories[categoryIndex];
 
         Intent intent = new Intent(
                 this,
                 ConversionActivity.class
         );
 
-        intent.putExtra(EXTRA_CATEGORY, category);
+        intent.putExtra(
+                ConversionActivity.EXTRA_CATEGORY,
+                category.getKey()
+        );
+
         startActivity(intent);
     }
 }
