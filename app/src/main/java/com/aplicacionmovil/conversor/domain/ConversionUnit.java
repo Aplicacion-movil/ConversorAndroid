@@ -76,7 +76,7 @@ public enum ConversionUnit {
             1.0,
             273.15
     ),
-    RAKIRE(
+    RANKIRE(
             ConversionCategory.TEMPERATURE,
             "R",
             0.0,
@@ -157,11 +157,7 @@ public enum ConversionUnit {
      * @param factorToBase unidades de referencia contenidas en una unidad
      */
 
-    ConversionUnit(
-            ConversionCategory category,
-            String symbol,
-            double factorToBase
-    ) {
+    ConversionUnit(ConversionCategory category, String symbol, double factorToBase) {
         this(
                 category,
                 symbol,
@@ -183,12 +179,7 @@ public enum ConversionUnit {
      * @param offset desplazamiento de la escala respecto a la referencia
      */
 
-    ConversionUnit(
-            ConversionCategory category,
-            String symbol,
-            double scaleToBase,
-            double offset
-    ) {
+    ConversionUnit(ConversionCategory category, String symbol, double scaleToBase, double offset) {
         this(
                 category,
                 symbol,
@@ -197,12 +188,7 @@ public enum ConversionUnit {
         );
     }
 
-    ConversionUnit(
-            ConversionCategory category,
-            String symbol,
-            ConversionOperation toBaseOperation,
-            ConversionOperation fromBaseOperation
-    ) {
+    ConversionUnit(ConversionCategory category, String symbol, ConversionOperation toBaseOperation, ConversionOperation fromBaseOperation) {
         this.category = category;
         this.symbol = symbol;
         this.toBaseOperation = toBaseOperation;

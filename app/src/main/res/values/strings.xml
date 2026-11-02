@@ -6,6 +6,7 @@
     <string name="category_image_description">Imagen de la categoría seleccionada</string>
     <string name="category_required">Selecciona una categoría antes de continuar</string>
     <string name="image_error">No se ha podido cargar la imagen</string>
+    <string name="absolute_zero">Valor introduzido no debe ser menor al valor cero absoluto</string>
 
     <string name="conversion_title">Conversión: %1$s</string>
     <string name="invalid_category_title">Categoría no válida</string>
@@ -45,7 +46,7 @@
     <string name="unit_celsius">Celsius (°C)</string>
     <string name="unit_fahrenheit">Fahrenheit (°F)</string>
     <string name="unit_kelvin">Kelvin (K)</string>
-    <string name="unit_rakire">Rakire (R)</string>
+    <string name="unit_rankire">Rankire (R)</string>
 
     <string name="unit_kilogram">Kilogramo (kg)</string>
     <string name="unit_gram">Gramo (g)</string>

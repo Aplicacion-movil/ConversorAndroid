@@ -83,8 +83,8 @@ public final class ConversionLabels {
                 R.string.unit_kelvin
         );
         UNIT_LABELS.put(
-                ConversionUnit.RAKIRE,
-                R.string.unit_rakire
+                ConversionUnit.RANKIRE,
+                R.string.unit_rankire
         );
 
         UNIT_LABELS.put(
