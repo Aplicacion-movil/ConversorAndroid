@@ -45,6 +45,7 @@
     <string name="unit_celsius">Celsius (°C)</string>
     <string name="unit_fahrenheit">Fahrenheit (°F)</string>
     <string name="unit_kelvin">Kelvin (K)</string>
+    <string name="unit_rakire">Rakire (R)</string>
 
     <string name="unit_kilogram">Kilogramo (kg)</string>
     <string name="unit_gram">Gramo (g)</string>

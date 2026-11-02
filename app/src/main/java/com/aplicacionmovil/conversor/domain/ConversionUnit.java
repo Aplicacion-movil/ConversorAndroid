@@ -76,6 +76,12 @@ public enum ConversionUnit {
             1.0,
             273.15
     ),
+    RAKIRE(
+            ConversionCategory.TEMPERATURE,
+            "R",
+            0.0,
+            491.67
+    ),
 
     KILOGRAM(
             ConversionCategory.MASS,
