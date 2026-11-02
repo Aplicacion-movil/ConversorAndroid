@@ -82,6 +82,10 @@ public final class ConversionLabels {
                 ConversionUnit.KELVIN,
                 R.string.unit_kelvin
         );
+        UNIT_LABELS.put(
+                ConversionUnit.RAKIRE,
+                R.string.unit_rakire
+        );
 
         UNIT_LABELS.put(
                 ConversionUnit.KILOGRAM,
