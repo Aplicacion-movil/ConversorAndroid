@@ -42,37 +42,21 @@ public final class ConversionEngine {
      *         o el resultado no es finito
      */
 
-    public double convert(
-            double value,
-            ConversionUnit source,
-            ConversionUnit target
-    ) {
-        if (!isFinite(value)) {
-            throw new IllegalArgumentException(
-                    "El valor debe ser finito"
-            );
-        }
+    public double convert(double value, ConversionUnit source, ConversionUnit target) {
+        if (!isFinite(value))
+            throw new IllegalArgumentException("El valor debe ser finito");
 
-        if (source == null || target == null) {
-            throw new IllegalArgumentException(
-                    "Las unidades son obligatorias"
-            );
-        }
+        if (source == null || target == null)
+            throw new IllegalArgumentException("Las unidades son obligatorias");
 
-        if (source.getCategory() != target.getCategory()) {
-            throw new IllegalArgumentException(
-                    "Las unidades pertenecen a categorías diferentes"
-            );
-        }
+        if (source.getCategory() != target.getCategory())
+            throw new IllegalArgumentException("Las unidades pertenecen a categorías diferentes");
 
         double baseValue = source.toBase(value);
         double result = target.fromBase(baseValue);
 
-        if (!isFinite(result)) {
-            throw new IllegalArgumentException(
-                    "El resultado está fuera del rango admitido"
-            );
-        }
+        if (!isFinite(result))
+            throw new IllegalArgumentException("El resultado está fuera del rango admitido");
 
         return result;
     }

@@ -44,9 +44,7 @@ public class SelectionActivity extends AppCompatActivity {
 
         configureSpinner();
 
-        continueButton.setOnClickListener(
-                view -> openConversionActivity()
-        );
+        continueButton.setOnClickListener(view -> openConversionActivity());
     }
 
     private void configureSpinner() {
@@ -57,21 +55,14 @@ public class SelectionActivity extends AppCompatActivity {
                         android.R.layout.simple_spinner_item
                 );
 
-        adapter.setDropDownViewResource(
-                android.R.layout.simple_spinner_dropdown_item
-        );
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
         categorySpinner.setAdapter(adapter);
 
         categorySpinner.setOnItemSelectedListener(
                 new AdapterView.OnItemSelectedListener() {
                     @Override
-                    public void onItemSelected(
-                            AdapterView<?> parent,
-                            View view,
-                            int position,
-                            long id
-                    ) {
+                    public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                         showCategoryImage(position);
                     }
 
@@ -86,22 +77,16 @@ public class SelectionActivity extends AppCompatActivity {
     private void showCategoryImage(int position) {
         if (position <= 0 || position >= CATEGORY_IMAGES.length) {
             clearCategoryImage();
+
             return;
         }
 
-        currentBitmap = BitmapFactory.decodeResource(
-                getResources(),
-                CATEGORY_IMAGES[position]
-        );
+        currentBitmap = BitmapFactory.decodeResource(getResources(), CATEGORY_IMAGES[position]);
 
         if (currentBitmap == null) {
             clearCategoryImage();
 
-            Snackbar.make(
-                    rootView,
-                    R.string.image_error,
-                    Snackbar.LENGTH_SHORT
-            ).show();
+            Snackbar.make(rootView, R.string.image_error, Snackbar.LENGTH_SHORT).show();
 
             return;
         }
@@ -117,34 +102,21 @@ public class SelectionActivity extends AppCompatActivity {
     private void openConversionActivity() {
         int position = categorySpinner.getSelectedItemPosition();
 
-        ConversionCategory[] categories =
-                ConversionCategory.values();
+        ConversionCategory[] categories = ConversionCategory.values();
 
         int categoryIndex = position - 1;
 
-        if (categoryIndex < 0
-                || categoryIndex >= categories.length) {
-            Snackbar.make(
-                    rootView,
-                    R.string.category_required,
-                    Snackbar.LENGTH_SHORT
-            ).show();
+        if (categoryIndex < 0 || categoryIndex >= categories.length) {
+            Snackbar.make(rootView, R.string.category_required, Snackbar.LENGTH_SHORT).show();
 
             return;
         }
 
-        ConversionCategory category =
-                categories[categoryIndex];
+        ConversionCategory category = categories[categoryIndex];
 
-        Intent intent = new Intent(
-                this,
-                ConversionActivity.class
-        );
+        Intent intent = new Intent(this, ConversionActivity.class);
 
-        intent.putExtra(
-                ConversionActivity.EXTRA_CATEGORY,
-                category.getKey()
-        );
+        intent.putExtra(ConversionActivity.EXTRA_CATEGORY, category.getKey());
 
         startActivity(intent);
     }

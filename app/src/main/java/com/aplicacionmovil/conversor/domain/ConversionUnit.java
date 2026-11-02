@@ -77,22 +77,57 @@ public enum ConversionUnit {
             1.0,
             273.15
     ),
-    RAKIRE(
+    RANKIRE(
             ConversionCategory.TEMPERATURE,
             "R",
             0.0,
             491.67
     ),
 
+    STONE(
+            ConversionCategory.MASS,
+            "st",
+            6.35029
+    ),
     KILOGRAM(
             ConversionCategory.MASS,
             "kg",
             1.0
     ),
+    HECTOGRAM(
+            ConversionCategory.MASS,
+            "hg",
+            0.1
+    ),
+    DECAGRAM(
+            ConversionCategory.MASS,
+            "dkg",
+            0.01
+    ),
     GRAM(
             ConversionCategory.MASS,
             "g",
             0.001
+    ),
+    DECIGRAM(
+            ConversionCategory.MASS,
+            "dg",
+            0.0001
+    ),
+    CENTIGRAM(
+            ConversionCategory.MASS,
+            "cg",
+            0.00001
+    ),
+    MILIGRAM(
+            ConversionCategory.MASS,
+            "mg",
+            0.000001
+    ),
+    MICROGRAM(
+            ConversionCategory.MASS,
+            "mcg",
+            0.0000001
     ),
     POUND(
             ConversionCategory.MASS,
@@ -174,11 +209,7 @@ public enum ConversionUnit {
      * @param factorToBase unidades de referencia contenidas en una unidad
      */
 
-    ConversionUnit(
-            ConversionCategory category,
-            String symbol,
-            double factorToBase
-    ) {
+    ConversionUnit(ConversionCategory category, String symbol, double factorToBase) {
         this(
                 category,
                 symbol,
@@ -200,12 +231,7 @@ public enum ConversionUnit {
      * @param offset desplazamiento de la escala respecto a la referencia
      */
 
-    ConversionUnit(
-            ConversionCategory category,
-            String symbol,
-            double scaleToBase,
-            double offset
-    ) {
+    ConversionUnit(ConversionCategory category, String symbol, double scaleToBase, double offset) {
         this(
                 category,
                 symbol,
@@ -214,12 +240,7 @@ public enum ConversionUnit {
         );
     }
 
-    ConversionUnit(
-            ConversionCategory category,
-            String symbol,
-            ConversionOperation toBaseOperation,
-            ConversionOperation fromBaseOperation
-    ) {
+    ConversionUnit(ConversionCategory category, String symbol, ConversionOperation toBaseOperation, ConversionOperation fromBaseOperation) {
         this.category = category;
         this.symbol = symbol;
         this.toBaseOperation = toBaseOperation;
