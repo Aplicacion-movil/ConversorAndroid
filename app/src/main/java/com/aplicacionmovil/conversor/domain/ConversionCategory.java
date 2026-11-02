@@ -5,7 +5,8 @@ public enum ConversionCategory {
     TEMPERATURE("temperature"),
     MASS("mass"),
     VOLUME("volume"),
-    SPEED("speed");
+    SPEED("speed"),
+    PRESSURE("pressure");
 
     private final String key;
 

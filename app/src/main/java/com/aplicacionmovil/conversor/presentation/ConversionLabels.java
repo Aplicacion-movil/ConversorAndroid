@@ -40,6 +40,10 @@ public final class ConversionLabels {
                 ConversionCategory.SPEED,
                 R.string.category_speed
         );
+        CATEGORY_LABELS.put(
+                ConversionCategory.PRESSURE,
+                R.string.category_pressure
+        );
 
         UNIT_LABELS.put(
                 ConversionUnit.METER,
@@ -132,6 +136,19 @@ public final class ConversionLabels {
         UNIT_LABELS.put(
                 ConversionUnit.MILE_PER_HOUR,
                 R.string.unit_mile_per_hour
+        );
+
+        UNIT_LABELS.put(
+                ConversionUnit.PASCAL,
+                R.string.unit_pascal
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.BAR,
+                R.string.unit_bar
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.ATMOSPHERE,
+                R.string.unit_atmosphere
         );
     }
 
