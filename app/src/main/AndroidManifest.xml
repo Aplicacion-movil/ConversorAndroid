@@ -8,15 +8,23 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/Theme.Conversor">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".ConversionActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SelectionActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
     </application>
 
 </manifest>

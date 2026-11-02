@@ -12,8 +12,6 @@ android {
         targetSdk = 37
         versionCode = 1
         versionName = "1.0"
-
-        testInstrumentationRunner = "android.test.InstrumentationTestRunner"
     }
 
     buildTypes {
@@ -33,5 +31,6 @@ android {
 }
 
 dependencies {
+    implementation("com.google.android.material:material:1.14.0")
     testImplementation("junit:junit:4.13.2")
 }
