@@ -14,6 +14,7 @@ import com.aplicacionmovil.conversor.domain.ConversionCategory;
 import com.aplicacionmovil.conversor.domain.ConversionEngine;
 import com.aplicacionmovil.conversor.domain.ConversionUnit;
 import com.google.android.material.snackbar.Snackbar;
+import com.aplicacionmovil.conversor.presentation.ConversionLabels;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -88,7 +89,7 @@ public class ConversionActivity extends AppCompatActivity {
         }
 
         String categoryLabel = getString(
-                category.getLabelResId()
+                ConversionLabels.getCategoryLabel(category)
         );
 
         categoryTitle.setText(
@@ -127,7 +128,9 @@ public class ConversionActivity extends AppCompatActivity {
 
         for (ConversionUnit unit : units) {
             unitLabels.add(
-                    getString(unit.getLabelResId())
+                    getString(
+                            ConversionLabels.getUnitLabel(unit)
+                    )
             );
         }
 
