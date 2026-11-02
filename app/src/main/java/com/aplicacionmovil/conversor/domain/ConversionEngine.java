@@ -4,13 +4,23 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+
+/**
+ * Motor común que filtra unidades y convierte valores pasando
+ * siempre por la unidad de referencia de la categoría.
+ *
+ * <p>No contiene fórmulas por parejas de unidades.</p>
+ */
+
 public final class ConversionEngine {
 
     public List<ConversionUnit> getUnitsFor(
             ConversionCategory category
     ) {
         if (category == null) {
-            return Collections.emptyList();
+            throw new IllegalArgumentException(
+                    "La categoría es obligatoria"
+            );
         }
 
         List<ConversionUnit> units = new ArrayList<>();
@@ -23,6 +33,14 @@ public final class ConversionEngine {
 
         return Collections.unmodifiableList(units);
     }
+
+    /**
+     * Convierte un valor entre dos unidades de la misma categoría.
+     *
+     * @throws IllegalArgumentException si el valor no es finito,
+     *         falta alguna unidad, las categorías son incompatibles
+     *         o el resultado no es finito
+     */
 
     public double convert(
             double value,
