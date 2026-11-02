@@ -88,12 +88,40 @@ public final class ConversionLabels {
         );
 
         UNIT_LABELS.put(
+                ConversionUnit.STONE,
+                R.string.unit_stone
+        );
+        UNIT_LABELS.put(
                 ConversionUnit.KILOGRAM,
                 R.string.unit_kilogram
         );
         UNIT_LABELS.put(
+                ConversionUnit.HECTOGRAM,
+                R.string.unit_hectogram
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.DECAGRAM,
+                R.string.unit_decagram
+        );
+        UNIT_LABELS.put(
                 ConversionUnit.GRAM,
                 R.string.unit_gram
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.DECIGRAM,
+                R.string.unit_decigram
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.CENTIGRAM,
+                R.string.unit_centigram
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.MILIGRAM,
+                R.string.unit_miligram
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.MICROGRAM,
+                R.string.unit_microgram
         );
         UNIT_LABELS.put(
                 ConversionUnit.POUND,

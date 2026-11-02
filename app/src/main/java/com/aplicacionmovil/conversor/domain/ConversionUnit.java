@@ -83,15 +83,50 @@ public enum ConversionUnit {
             491.67
     ),
 
+    STONE(
+            ConversionCategory.MASS,
+            "st",
+            6.35029
+    ),
     KILOGRAM(
             ConversionCategory.MASS,
             "kg",
             1.0
     ),
+    HECTOGRAM(
+            ConversionCategory.MASS,
+            "hg",
+            0.1
+    ),
+    DECAGRAM(
+            ConversionCategory.MASS,
+            "dkg",
+            0.01
+    ),
     GRAM(
             ConversionCategory.MASS,
             "g",
             0.001
+    ),
+    DECIGRAM(
+            ConversionCategory.MASS,
+            "dg",
+            0.0001
+    ),
+    CENTIGRAM(
+            ConversionCategory.MASS,
+            "cg",
+            0.00001
+    ),
+    MILIGRAM(
+            ConversionCategory.MASS,
+            "mg",
+            0.000001
+    ),
+    MICROGRAM(
+            ConversionCategory.MASS,
+            "mcg",
+            0.0000001
     ),
     POUND(
             ConversionCategory.MASS,

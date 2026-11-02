@@ -48,8 +48,15 @@
     <string name="unit_kelvin">Kelvin (K)</string>
     <string name="unit_rankire">Rankire (R)</string>
 
+    <string name="unit_stone">Stone (st)</string>
     <string name="unit_kilogram">Kilogramo (kg)</string>
+    <string name="unit_hectogram">Hectogramo (hg)</string>
+    <string name="unit_decagram">Decagramo (dkg)</string>
     <string name="unit_gram">Gramo (g)</string>
+    <string name="unit_decigram">Decigramo (dg)</string>
+    <string name="unit_centigram">Centigramo (cg)</string>
+    <string name="unit_miligram">Miligramo (mg)</string>
+    <string name="unit_microgram">Microgramo (mcg)</string>
     <string name="unit_pound">Libra (lb)</string>
     <string name="unit_ounce">Onza (oz)</string>
 
