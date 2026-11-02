@@ -32,6 +32,7 @@
     <string name="category_temperature">Temperatura</string>
     <string name="category_mass">Masa y peso</string>
     <string name="category_volume">Volumen</string>
+    <string name="category_speed">Velocidad</string>
 
     <string name="unit_meter">Metro (m)</string>
     <string name="unit_kilometer">Kilómetro (km)</string>
@@ -55,11 +56,16 @@
     <string name="unit_cubic_meter">Metro cúbico (m³)</string>
     <string name="unit_us_gallon">Galón estadounidense (gal US)</string>
 
+    <string name="unit_meter_per_second">Metro por segundo (m/s)</string>
+    <string name="unit_kilometer_per_hour">Kilómetro por hora (km/h)</string>
+    <string name="unit_mile_per_hour">Milla por hora (mph)</string>
+
     <string-array name="conversion_categories">
         <item>@string/selection_title</item>
         <item>@string/category_length</item>
         <item>@string/category_temperature</item>
         <item>@string/category_mass</item>
         <item>@string/category_volume</item>
+        <item>@string/category_speed</item>
     </string-array>
 </resources>
