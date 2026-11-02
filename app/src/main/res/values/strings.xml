@@ -33,6 +33,7 @@
     <string name="category_mass">Masa y peso</string>
     <string name="category_volume">Volumen</string>
     <string name="category_speed">Velocidad</string>
+    <string name="category_pressure">Presión</string>
 
     <string name="unit_meter">Metro (m)</string>
     <string name="unit_kilometer">Kilómetro (km)</string>
@@ -60,6 +61,10 @@
     <string name="unit_kilometer_per_hour">Kilómetro por hora (km/h)</string>
     <string name="unit_mile_per_hour">Milla por hora (mph)</string>
 
+    <string name="unit_pascal">Pascal (Pa)</string>
+    <string name="unit_bar">Bar (bar)</string>
+    <string name="unit_atmosphere">Atmósfera (atm)</string>
+
     <string-array name="conversion_categories">
         <item>@string/selection_title</item>
         <item>@string/category_length</item>
@@ -67,5 +72,6 @@
         <item>@string/category_mass</item>
         <item>@string/category_volume</item>
         <item>@string/category_speed</item>
+        <item>@string/category_pressure</item>
     </string-array>
 </resources>
