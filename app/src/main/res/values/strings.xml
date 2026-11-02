@@ -37,6 +37,9 @@
     <string name="unit_kilometer">Kilómetro (km)</string>
     <string name="unit_centimeter">Centímetro (cm)</string>
     <string name="unit_millimeter">Milímetro (mm)</string>
+    <string name="unit_mile">Milla (mi)</string>
+    <string name="unit_foot">Pie (ft)</string>
+    <string name="unit_inch">Pulgada (in)</string>
 
     <string name="unit_celsius">Celsius (°C)</string>
     <string name="unit_fahrenheit">Fahrenheit (°F)</string>

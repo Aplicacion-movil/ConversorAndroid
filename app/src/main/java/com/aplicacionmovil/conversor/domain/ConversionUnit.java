@@ -9,29 +9,43 @@ public enum ConversionUnit {
             ConversionCategory.LENGTH,
             R.string.unit_meter,
             "m",
-            value -> value,
-            value -> value
+            1.0
     ),
     KILOMETER(
             ConversionCategory.LENGTH,
             R.string.unit_kilometer,
             "km",
-            value -> value * 1000.0,
-            value -> value / 1000.0
+            1000.0
     ),
     CENTIMETER(
             ConversionCategory.LENGTH,
             R.string.unit_centimeter,
             "cm",
-            value -> value / 100.0,
-            value -> value * 100.0
+            0.01
     ),
     MILLIMETER(
             ConversionCategory.LENGTH,
             R.string.unit_millimeter,
             "mm",
-            value -> value / 1000.0,
-            value -> value * 1000.0
+            0.001
+    ),
+    MILE(
+            ConversionCategory.LENGTH,
+            R.string.unit_mile,
+            "mi",
+            1609.344
+    ),
+    FOOT(
+            ConversionCategory.LENGTH,
+            R.string.unit_foot,
+            "ft",
+            0.3048
+    ),
+    INCH(
+            ConversionCategory.LENGTH,
+            R.string.unit_inch,
+            "in",
+            0.0254
     ),
 
     CELSIUS(
@@ -122,6 +136,21 @@ public enum ConversionUnit {
     private final String symbol;
     private final ConversionOperation toBaseOperation;
     private final ConversionOperation fromBaseOperation;
+
+    ConversionUnit(
+            ConversionCategory category,
+            @StringRes int labelResId,
+            String symbol,
+            double factorToBase
+    ) {
+        this(
+                category,
+                labelResId,
+                symbol,
+                value -> value * factorToBase,
+                value -> value / factorToBase
+        );
+    }
 
     ConversionUnit(
             ConversionCategory category,
