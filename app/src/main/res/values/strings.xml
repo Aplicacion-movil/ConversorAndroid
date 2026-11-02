@@ -8,16 +8,55 @@
     <string name="image_error">No se ha podido cargar la imagen</string>
 
     <string name="conversion_title">Conversión: %1$s</string>
-    <string name="conversion_pending">Aquí se implementará el conversor seleccionado.</string>
     <string name="invalid_category_title">Categoría no válida</string>
     <string name="invalid_category">No se ha recibido una categoría válida</string>
     <string name="back_button">Volver</string>
 
+    <string name="units_unavailable">No hay unidades disponibles para esta categoría</string>
+
+    <string name="input_required">Introduce un valor para convertir</string>
+    <string name="invalid_input">Introduce un número válido</string>
+    <string name="invalid_unit">Selecciona unidades válidas</string>
+    <string name="conversion_error">No se ha podido realizar la conversión</string>
+
+    <string name="result_format">%1$s %2$s = %3$s %4$s</string>
+
+    <string name="input_value_hint">Introduce un valor</string>
+    <string name="source_unit_label">Unidad de origen</string>
+    <string name="target_unit_label">Unidad de destino</string>
+    <string name="convert_button">Convertir</string>
+    <string name="result_placeholder">El resultado aparecerá aquí</string>
+    <string name="choose_another_category">Elegir otra categoría</string>
+
+    <string name="category_length">Longitud</string>
+    <string name="category_temperature">Temperatura</string>
+    <string name="category_mass">Masa y peso</string>
+    <string name="category_volume">Volumen</string>
+
+    <string name="unit_meter">Metro (m)</string>
+    <string name="unit_kilometer">Kilómetro (km)</string>
+    <string name="unit_centimeter">Centímetro (cm)</string>
+    <string name="unit_millimeter">Milímetro (mm)</string>
+
+    <string name="unit_celsius">Celsius (°C)</string>
+    <string name="unit_fahrenheit">Fahrenheit (°F)</string>
+    <string name="unit_kelvin">Kelvin (K)</string>
+
+    <string name="unit_kilogram">Kilogramo (kg)</string>
+    <string name="unit_gram">Gramo (g)</string>
+    <string name="unit_pound">Libra (lb)</string>
+    <string name="unit_ounce">Onza (oz)</string>
+
+    <string name="unit_liter">Litro (L)</string>
+    <string name="unit_milliliter">Mililitro (mL)</string>
+    <string name="unit_cubic_meter">Metro cúbico (m³)</string>
+    <string name="unit_us_gallon">Galón estadounidense (gal US)</string>
+
     <string-array name="conversion_categories">
-        <item>Selecciona una categoría</item>
-        <item>Longitud</item>
-        <item>Temperatura</item>
-        <item>Masa y peso</item>
-        <item>Volumen</item>
+        <item>@string/selection_title</item>
+        <item>@string/category_length</item>
+        <item>@string/category_temperature</item>
+        <item>@string/category_mass</item>
+        <item>@string/category_volume</item>
     </string-array>
 </resources>
