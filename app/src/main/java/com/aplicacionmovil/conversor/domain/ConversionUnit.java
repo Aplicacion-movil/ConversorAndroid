@@ -103,29 +103,25 @@ public enum ConversionUnit {
             ConversionCategory.VOLUME,
             R.string.unit_liter,
             "L",
-            value -> value,
-            value -> value
+            1.0
     ),
     MILLILITER(
             ConversionCategory.VOLUME,
             R.string.unit_milliliter,
             "mL",
-            value -> value / 1000.0,
-            value -> value * 1000.0
+            0.001
     ),
     CUBIC_METER(
             ConversionCategory.VOLUME,
             R.string.unit_cubic_meter,
             "m³",
-            value -> value * 1000.0,
-            value -> value / 1000.0
+            1000.0
     ),
     US_GALLON(
             ConversionCategory.VOLUME,
             R.string.unit_us_gallon,
             "gal US",
-            value -> value * 3.785411784,
-            value -> value / 3.785411784
+            3.785411784
     );
 
     private final ConversionCategory category;
