@@ -36,6 +36,7 @@
     <string name="category_speed">Velocidad</string>
     <string name="category_time">Tiempo</string>
     <string name="category_computing">Informática</string>
+    <string name="category_area">Área</string>
 
     <string name="unit_meter">Metro (m)</string>
     <string name="unit_kilometer">Kilómetro (km)</string>
@@ -97,6 +98,19 @@
     <string name="unit_byte">Byte (B)</string>
     <string name="unit_bit">Bit (b)</string>
 
+    <string name="unit_square_kilometer">Kilómetro Cuadrado (km²)</string>
+    <string name="unit_square_hectometer">Hectómetro Cuadrado (hm²)</string>
+    <string name="unit_square_decameter">Decámetro Cuadrado (dam²)</string>
+    <string name="unit_square_meter">Metro Cuadrado (m²)</string>
+    <string name="unit_square_decimeter">Decímetro Cuadrado (dm²)</string>
+    <string name="unit_square_centimeter">Centímetro Cuadrado (cm²)</string>
+    <string name="unit_square_milimeter">Milímetro Cuadrado (mm²)</string>
+    <string name="unit_square_mile">Milla Cuadrada (mi²)</string>
+    <string name="unit_acre">Acre (ac)</string>
+    <string name="unit_square_yard">Yarda Cuadrada (yd²)</string>
+    <string name="unit_square_foot">Pie Cuadrado (ft²)</string>
+    <string name="unit_square_inch">Pulgada Cuadrada (in²)</string>
+
     <string-array name="conversion_categories">
         <item>@string/selection_title</item>
         <item>@string/category_length</item>
@@ -106,5 +120,6 @@
         <item>@string/category_speed</item>
         <item>@string/category_time</item>
         <item>@string/category_computing</item>
+        <item>@string/category_area</item>
     </string-array>
 </resources>

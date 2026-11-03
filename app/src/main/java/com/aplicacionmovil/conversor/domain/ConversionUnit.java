@@ -296,6 +296,67 @@ public enum ConversionUnit {
             ConversionCategory.COMPUTING,
             "b",
             1.0
+    ),
+
+    SQUARE_MILE(
+            ConversionCategory.AREA,
+            "mi²",
+            2589988.11
+    ),
+    SQUARE_KILOMETER(
+            ConversionCategory.AREA,
+            "km²",
+            1000000.0
+    ),
+    SQUARE_HECTOMETER(
+            ConversionCategory.AREA,
+            "hm²",
+            10000.0
+    ),
+    ACRE(
+            ConversionCategory.AREA,
+            "ac",
+            4046.8564224
+    ),
+    SQUARE_DECAMETER(
+            ConversionCategory.AREA,
+            "dam²",
+            100.0
+    ),
+    SQUARE_METER(
+            ConversionCategory.AREA,
+            "m²",
+            1.0
+    ),
+    SQUARE_FOOT(
+            ConversionCategory.AREA,
+            "ft²",
+            0.09290304
+    ),
+    SQUARE_YARD(
+            ConversionCategory.AREA,
+            "yd²",
+            0.83612736
+    ),
+    SQUARE_DECIMETER(
+            ConversionCategory.AREA,
+            "bm²",
+            0.01
+    ),
+    SQUARE_INCH(
+            ConversionCategory.AREA,
+            "in²",
+            0.00064516
+    ),
+    SQUARE_CENTIMETER(
+            ConversionCategory.AREA,
+            "cm²",
+            0.0001
+    ),
+    SQUARE_MILIMETER(
+            ConversionCategory.AREA,
+            "mm²",
+            0.000001
     );
 
     private final ConversionCategory category;

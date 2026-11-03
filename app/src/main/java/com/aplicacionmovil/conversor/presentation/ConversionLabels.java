@@ -43,6 +43,10 @@ public final class ConversionLabels {
                 ConversionCategory.COMPUTING,
                 R.string.category_computing
         );
+        CATEGORY_LABELS.put(
+                ConversionCategory.AREA,
+                R.string.category_area
+        );
 
         UNIT_LABELS.put(
                 ConversionUnit.METER,
@@ -261,6 +265,55 @@ public final class ConversionLabels {
         UNIT_LABELS.put(
                 ConversionUnit.BIT,
                 R.string.unit_bit
+        );
+
+        UNIT_LABELS.put(
+                ConversionUnit.SQUARE_MILE,
+                R.string.unit_square_mile
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.SQUARE_KILOMETER,
+                R.string.unit_square_kilometer
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.SQUARE_HECTOMETER,
+                R.string.unit_square_hectometer
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.ACRE,
+                R.string.unit_acre
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.SQUARE_DECAMETER,
+                R.string.unit_square_decameter
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.SQUARE_METER,
+                R.string.unit_square_meter
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.SQUARE_FOOT,
+                R.string.unit_square_foot
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.SQUARE_YARD,
+                R.string.unit_square_yard
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.SQUARE_DECIMETER,
+                R.string.unit_square_decimeter
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.SQUARE_INCH,
+                R.string.unit_square_inch
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.SQUARE_CENTIMETER,
+                R.string.unit_square_centimeter
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.SQUARE_MILIMETER,
+                R.string.unit_square_milimeter
         );
     }
 
