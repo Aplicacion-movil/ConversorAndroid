@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-
 /**
  * Motor común que filtra unidades y convierte valores pasando
  * siempre por la unidad de referencia de la categoría.
@@ -13,22 +12,15 @@ import java.util.List;
  */
 
 public final class ConversionEngine {
-
-    public List<ConversionUnit> getUnitsFor(
-            ConversionCategory category
-    ) {
-        if (category == null) {
-            throw new IllegalArgumentException(
-                    "La categoría es obligatoria"
-            );
-        }
+    public List<ConversionUnit> getUnitsFor(ConversionCategory category) {
+        if (category == null)
+            throw new IllegalArgumentException("La categoría es obligatoria");
 
         List<ConversionUnit> units = new ArrayList<>();
 
         for (ConversionUnit unit : ConversionUnit.values()) {
-            if (unit.getCategory() == category) {
+            if (unit.getCategory() == category)
                 units.add(unit);
-            }
         }
 
         return Collections.unmodifiableList(units);
@@ -62,7 +54,6 @@ public final class ConversionEngine {
     }
 
     private boolean isFinite(double value) {
-        return !Double.isNaN(value)
-                && !Double.isInfinite(value);
+        return !Double.isNaN(value) && !Double.isInfinite(value);
     }
 }

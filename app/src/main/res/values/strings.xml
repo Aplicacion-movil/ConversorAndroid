@@ -34,6 +34,9 @@
     <string name="category_mass">Masa y peso</string>
     <string name="category_volume">Volumen</string>
     <string name="category_speed">Velocidad</string>
+    <string name="category_time">Tiempo</string>
+    <string name="category_computing">Informática</string>
+    <string name="category_area">Área</string>
     <string name="category_pressure">Presión</string>
 
     <string name="unit_meter">Metro (m)</string>
@@ -65,11 +68,49 @@
     <string name="unit_milliliter">Mililitro (mL)</string>
     <string name="unit_cubic_meter">Metro cúbico (m³)</string>
     <string name="unit_us_gallon">Galón estadounidense (gal US)</string>
+    <string name="unit_beer_mug">Jarra de cerveza (bm)</string>
+    <string name="unit_wine_cup">Copa de vino (wc)</string>
+    <string name="unit_shot">Chupito (s)</string>
+    <string name="unit_wine_barrel">Barril de vino (wb)</string>
+    <string name="unit_wineskin">Bota de vino (ws)</string>
 
     <string name="unit_meter_per_second">Metro por segundo (m/s)</string>
     <string name="unit_kilometer_per_hour">Kilómetro por hora (km/h)</string>
     <string name="unit_mile_per_hour">Milla por hora (mph)</string>
 
+    <string name="unit_century">Siglo (c)</string>
+    <string name="unit_decade">Decada (de)</string>
+    <string name="unit_year">Año (y)</string>
+    <string name="unit_month">Mes (mo)</string>
+    <string name="unit_week">Semana (w)</string>
+    <string name="unit_day">Dia (d)</string>
+    <string name="unit_hour">Hora (h)</string>
+    <string name="unit_minute">Minuto (m)</string>
+    <string name="unit_second">Segundo (s)</string>
+    <string name="unit_milisecond">Milisegundo (ms)</string>
+    <string name="unit_microsecond">Microsegundo (mcs)</string>
+    <string name="unit_nanosecond">Nanosegundo (ns)</string>
+
+    <string name="unit_petabyte">Petabyte (PB)</string>
+    <string name="unit_terabyte">Terabyte (TB)</string>
+    <string name="unit_gigabyte">Gigabyte (GB)</string>
+    <string name="unit_megabyte">Megabyte (MB)</string>
+    <string name="unit_kilobyte">Kilobyte (KB)</string>
+    <string name="unit_byte">Byte (B)</string>
+    <string name="unit_bit">Bit (b)</string>
+
+    <string name="unit_square_kilometer">Kilómetro Cuadrado (km²)</string>
+    <string name="unit_square_hectometer">Hectómetro Cuadrado (hm²)</string>
+    <string name="unit_square_decameter">Decámetro Cuadrado (dam²)</string>
+    <string name="unit_square_meter">Metro Cuadrado (m²)</string>
+    <string name="unit_square_decimeter">Decímetro Cuadrado (dm²)</string>
+    <string name="unit_square_centimeter">Centímetro Cuadrado (cm²)</string>
+    <string name="unit_square_milimeter">Milímetro Cuadrado (mm²)</string>
+    <string name="unit_square_mile">Milla Cuadrada (mi²)</string>
+    <string name="unit_acre">Acre (ac)</string>
+    <string name="unit_square_yard">Yarda Cuadrada (yd²)</string>
+    <string name="unit_square_foot">Pie Cuadrado (ft²)</string>
+    <string name="unit_square_inch">Pulgada Cuadrada (in²)</string>
     <string name="unit_pascal">Pascal (Pa)</string>
     <string name="unit_bar">Bar (bar)</string>
     <string name="unit_atmosphere">Atmósfera (atm)</string>
@@ -81,6 +122,9 @@
         <item>@string/category_mass</item>
         <item>@string/category_volume</item>
         <item>@string/category_speed</item>
+        <item>@string/category_time</item>
+        <item>@string/category_computing</item>
+        <item>@string/category_area</item>
         <item>@string/category_pressure</item>
     </string-array>
 </resources>

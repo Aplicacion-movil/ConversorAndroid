@@ -140,10 +140,35 @@ public enum ConversionUnit {
             0.028349523125
     ),
 
+    WINE_BARREL(
+            ConversionCategory.VOLUME,
+            "wb",
+            255.0
+    ),
     LITER(
             ConversionCategory.VOLUME,
             "L",
             1.0
+    ),
+    WINESKIN(
+            ConversionCategory.VOLUME,
+            "ws",
+            0.75
+    ),
+    BEER_MUG(
+            ConversionCategory.VOLUME,
+            "bm",
+            0.5
+    ),
+    WINE_CUP(
+            ConversionCategory.VOLUME,
+            "wc",
+            0.15
+    ),
+    SHOT(
+            ConversionCategory.VOLUME,
+            "s",
+            0.02957
     ),
     MILLILITER(
             ConversionCategory.VOLUME,
@@ -177,6 +202,162 @@ public enum ConversionUnit {
             0.44704
     ),
 
+    CENTURY(
+            ConversionCategory.TIME,
+            "c",
+            3155695200.0
+    ),
+    DECADE(
+            ConversionCategory.TIME,
+            "de",
+            315569520.0
+    ),
+    YEAR(
+            ConversionCategory.TIME,
+            "y",
+            31536000.0
+    ),
+    MONTH(
+            ConversionCategory.TIME,
+            "mo",
+            2592000.0
+    ),
+    WEEK(
+            ConversionCategory.TIME,
+            "w",
+            604800.0
+    ),
+    DAY(
+            ConversionCategory.TIME,
+            "d",
+            86400.0
+    ),
+    HOUR(
+            ConversionCategory.TIME,
+            "h",
+            3600.0
+    ),
+    MINUTE(
+            ConversionCategory.TIME,
+            "m",
+            60.0
+    ),
+    SECOND(
+            ConversionCategory.TIME,
+            "s",
+            1.0
+    ),
+    MILISECOND(
+            ConversionCategory.TIME,
+            "ms",
+            0.001
+    ),
+    MICROSECOND(
+            ConversionCategory.TIME,
+            "mcs",
+            0.000001
+    ),
+    NANOSECOND(
+            ConversionCategory.TIME,
+            "ns",
+            0.000000001
+    ),
+
+    PETABYTE(
+            ConversionCategory.COMPUTING,
+            "PB",
+            9007199254740992.0
+    ),
+    TERABYTE(
+            ConversionCategory.COMPUTING,
+            "TB",
+            8796093022208.0
+    ),
+    GIGABYTE(
+            ConversionCategory.COMPUTING,
+            "GB",
+            8589934592.0
+    ),
+    MEGABYTE(
+            ConversionCategory.COMPUTING,
+            "MB",
+            8388608.0
+    ),
+    KILOBYTE(
+            ConversionCategory.COMPUTING,
+            "KB",
+            8192.0
+    ),
+    BYTE(
+            ConversionCategory.COMPUTING,
+            "B",
+            8.0
+    ),
+    BIT(
+            ConversionCategory.COMPUTING,
+            "b",
+            1.0
+    ),
+
+    SQUARE_MILE(
+            ConversionCategory.AREA,
+            "mi²",
+            2589988.11
+    ),
+    SQUARE_KILOMETER(
+            ConversionCategory.AREA,
+            "km²",
+            1000000.0
+    ),
+    SQUARE_HECTOMETER(
+            ConversionCategory.AREA,
+            "hm²",
+            10000.0
+    ),
+    ACRE(
+            ConversionCategory.AREA,
+            "ac",
+            4046.8564224
+    ),
+    SQUARE_DECAMETER(
+            ConversionCategory.AREA,
+            "dam²",
+            100.0
+    ),
+    SQUARE_METER(
+            ConversionCategory.AREA,
+            "m²",
+            1.0
+    ),
+    SQUARE_FOOT(
+            ConversionCategory.AREA,
+            "ft²",
+            0.09290304
+    ),
+    SQUARE_YARD(
+            ConversionCategory.AREA,
+            "yd²",
+            0.83612736
+    ),
+    SQUARE_DECIMETER(
+            ConversionCategory.AREA,
+            "bm²",
+            0.01
+    ),
+    SQUARE_INCH(
+            ConversionCategory.AREA,
+            "in²",
+            0.00064516
+    ),
+    SQUARE_CENTIMETER(
+            ConversionCategory.AREA,
+            "cm²",
+            0.0001
+    ),
+    SQUARE_MILIMETER(
+            ConversionCategory.AREA,
+            "mm²",
+            0.000001
     PASCAL(
             ConversionCategory.PRESSURE,
             "Pa",

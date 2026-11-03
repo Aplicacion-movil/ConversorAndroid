@@ -83,10 +83,7 @@ public class ConversionActivity extends AppCompatActivity {
 
         String categoryLabel = getString(ConversionLabels.getCategoryLabel(category));
 
-        categoryTitle.setText(getString(
-                        R.string.conversion_title,
-                        categoryLabel
-                ));
+        categoryTitle.setText(getString(R.string.conversion_title, categoryLabel));
         configureUnitSpinners(category);
         convertButton.setOnClickListener(view -> convertValue());
     }
@@ -127,16 +124,12 @@ public class ConversionActivity extends AppCompatActivity {
         sourceUnitSpinner.setAdapter(adapter);
         targetUnitSpinner.setAdapter(adapter);
 
-        if (units.size() > 1) {
+        if (units.size() > 1)
             targetUnitSpinner.setSelection(1);
-        }
     }
 
     private void convertValue() {
-        String rawValue = inputValue
-                .getText()
-                .toString()
-                .trim();
+        String rawValue = inputValue.getText().toString().trim();
 
         if (rawValue.isEmpty()) {
             showError(R.string.input_required);

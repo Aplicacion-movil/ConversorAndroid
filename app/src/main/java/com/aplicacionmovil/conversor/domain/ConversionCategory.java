@@ -6,6 +6,9 @@ public enum ConversionCategory {
     MASS("mass"),
     VOLUME("volume"),
     SPEED("speed"),
+    TIME("time"),
+    COMPUTING("computing"),
+    AREA("area");
     PRESSURE("pressure");
 
     private final String key;
@@ -19,14 +22,12 @@ public enum ConversionCategory {
     }
 
     public static ConversionCategory fromKey(String key) {
-        if (key == null) {
+        if (key == null)
             return null;
-        }
 
         for (ConversionCategory category : values()) {
-            if (category.key.equals(key)) {
+            if (category.key.equals(key))
                 return category;
-            }
         }
 
         return null;
