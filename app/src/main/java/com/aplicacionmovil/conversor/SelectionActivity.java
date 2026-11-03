@@ -27,6 +27,7 @@ public class SelectionActivity extends AppCompatActivity {
             R.drawable.category_time,
             R.drawable.category_computing,
             R.drawable.category_area
+            R.drawable.category_pressure
     };
 
     private View rootView;

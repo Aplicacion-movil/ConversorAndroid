@@ -37,6 +37,7 @@
     <string name="category_time">Tiempo</string>
     <string name="category_computing">Informática</string>
     <string name="category_area">Área</string>
+    <string name="category_pressure">Presión</string>
 
     <string name="unit_meter">Metro (m)</string>
     <string name="unit_kilometer">Kilómetro (km)</string>
@@ -110,6 +111,9 @@
     <string name="unit_square_yard">Yarda Cuadrada (yd²)</string>
     <string name="unit_square_foot">Pie Cuadrado (ft²)</string>
     <string name="unit_square_inch">Pulgada Cuadrada (in²)</string>
+    <string name="unit_pascal">Pascal (Pa)</string>
+    <string name="unit_bar">Bar (bar)</string>
+    <string name="unit_atmosphere">Atmósfera (atm)</string>
 
     <string-array name="conversion_categories">
         <item>@string/selection_title</item>
@@ -121,5 +125,6 @@
         <item>@string/category_time</item>
         <item>@string/category_computing</item>
         <item>@string/category_area</item>
+        <item>@string/category_pressure</item>
     </string-array>
 </resources>

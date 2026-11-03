@@ -10,6 +10,7 @@ package com.aplicacionmovil.conversor.domain;
  *     <li>Masa y peso: kilogramo.</li>
  *     <li>Volumen: litro.</li>
  *     <li>Velocidad: metro por segundo.</li>
+ *     <li>Presión: pascal.</li>
  * </ul>
  *
  * <p>En las categorías lineales, {@code factorToBase} representa
@@ -357,6 +358,20 @@ public enum ConversionUnit {
             ConversionCategory.AREA,
             "mm²",
             0.000001
+    PASCAL(
+            ConversionCategory.PRESSURE,
+            "Pa",
+            1.0
+    ),
+    BAR(
+            ConversionCategory.PRESSURE,
+            "bar",
+            100000.0
+    ),
+    ATMOSPHERE(
+            ConversionCategory.PRESSURE,
+            "atm",
+            101325.0
     );
 
     private final ConversionCategory category;
