@@ -176,25 +176,65 @@ public enum ConversionUnit {
             0.44704
     ),
 
+    CENTURY(
+            ConversionCategory.TIME,
+            "c",
+            3155695200.0
+    ),
+    DECADE(
+            ConversionCategory.TIME,
+            "de",
+            315569520.0
+    ),
+    YEAR(
+            ConversionCategory.TIME,
+            "y",
+            31536000.0
+    ),
+    MONTH(
+            ConversionCategory.TIME,
+            "mo",
+            2592000.0
+    ),
+    WEEK(
+            ConversionCategory.TIME,
+            "w",
+            604800.0
+    ),
+    DAY(
+            ConversionCategory.TIME,
+            "d",
+            86400.0
+    ),
     HOUR(
             ConversionCategory.TIME,
             "h",
-            0.44704
+            3600.0
     ),
-    MINUT(
+    MINUTE(
             ConversionCategory.TIME,
             "m",
-            0.44704
+            60.0
     ),
     SECOND(
             ConversionCategory.TIME,
             "s",
-            0.44704
+            1.0
     ),
     MILISECOND(
             ConversionCategory.TIME,
             "ms",
-            0.44704
+            0.001
+    ),
+    MICROSECOND(
+            ConversionCategory.TIME,
+            "mcs",
+            0.000001
+    ),
+    NANOSECOND(
+            ConversionCategory.TIME,
+            "ns",
+            0.000000001
     );
 
     private final ConversionCategory category;

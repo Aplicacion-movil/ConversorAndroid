@@ -160,6 +160,55 @@ public final class ConversionLabels {
                 ConversionUnit.MILE_PER_HOUR,
                 R.string.unit_mile_per_hour
         );
+
+        UNIT_LABELS.put(
+                ConversionUnit.CENTURY,
+                R.string.unit_century
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.DECADE,
+                R.string.unit_decade
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.YEAR,
+                R.string.unit_year
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.MONTH,
+                R.string.unit_month
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.WEEK,
+                R.string.unit_week
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.DAY,
+                R.string.unit_day
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.HOUR,
+                R.string.unit_hour
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.MINUTE,
+                R.string.unit_minute
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.SECOND,
+                R.string.unit_second
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.MILISECOND,
+                R.string.unit_milisecond
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.MICROSECOND,
+                R.string.unit_microsecond
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.NANOSECOND,
+                R.string.unit_nanosecond
+        );
     }
 
     private ConversionLabels() {
