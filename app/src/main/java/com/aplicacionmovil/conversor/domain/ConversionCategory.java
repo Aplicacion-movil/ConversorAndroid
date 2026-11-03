@@ -6,7 +6,8 @@ public enum ConversionCategory {
     MASS("mass"),
     VOLUME("volume"),
     SPEED("speed"),
-    TIME("time");
+    TIME("time"),
+    COMPUTING("computing");
 
     private final String key;
 

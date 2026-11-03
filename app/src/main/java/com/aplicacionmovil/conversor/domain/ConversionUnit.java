@@ -139,10 +139,35 @@ public enum ConversionUnit {
             0.028349523125
     ),
 
+    WINE_BARREL(
+            ConversionCategory.VOLUME,
+            "wb",
+            255.0
+    ),
     LITER(
             ConversionCategory.VOLUME,
             "L",
             1.0
+    ),
+    WINESKIN(
+            ConversionCategory.VOLUME,
+            "ws",
+            0.75
+    ),
+    BEER_MUG(
+            ConversionCategory.VOLUME,
+            "bm",
+            0.5
+    ),
+    WINE_CUP(
+            ConversionCategory.VOLUME,
+            "wc",
+            0.15
+    ),
+    SHOT(
+            ConversionCategory.VOLUME,
+            "s",
+            0.02957
     ),
     MILLILITER(
             ConversionCategory.VOLUME,
@@ -235,6 +260,42 @@ public enum ConversionUnit {
             ConversionCategory.TIME,
             "ns",
             0.000000001
+    ),
+
+    PETABYTE(
+            ConversionCategory.COMPUTING,
+            "PB",
+            9007199254740992.0
+    ),
+    TERABYTE(
+            ConversionCategory.COMPUTING,
+            "TB",
+            8796093022208.0
+    ),
+    GIGABYTE(
+            ConversionCategory.COMPUTING,
+            "GB",
+            8589934592.0
+    ),
+    MEGABYTE(
+            ConversionCategory.COMPUTING,
+            "MB",
+            8388608.0
+    ),
+    KILOBYTE(
+            ConversionCategory.COMPUTING,
+            "KB",
+            8192.0
+    ),
+    BYTE(
+            ConversionCategory.COMPUTING,
+            "B",
+            8.0
+    ),
+    BIT(
+            ConversionCategory.COMPUTING,
+            "b",
+            1.0
     );
 
     private final ConversionCategory category;

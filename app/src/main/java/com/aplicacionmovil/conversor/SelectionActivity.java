@@ -24,7 +24,8 @@ public class SelectionActivity extends AppCompatActivity {
             R.drawable.category_mass,
             R.drawable.category_volume,
             R.drawable.category_speed,
-            R.drawable.category_time
+            R.drawable.category_time,
+            R.drawable.category_computing
     };
 
     private View rootView;

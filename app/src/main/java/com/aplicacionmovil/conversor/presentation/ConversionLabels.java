@@ -39,6 +39,10 @@ public final class ConversionLabels {
                 ConversionCategory.TIME,
                 R.string.category_time
         );
+        CATEGORY_LABELS.put(
+                ConversionCategory.COMPUTING,
+                R.string.category_computing
+        );
 
         UNIT_LABELS.put(
                 ConversionUnit.METER,
@@ -132,8 +136,28 @@ public final class ConversionLabels {
         );
 
         UNIT_LABELS.put(
+                ConversionUnit.WINE_BARREL,
+                R.string.unit_wine_barrel
+        );
+        UNIT_LABELS.put(
                 ConversionUnit.LITER,
                 R.string.unit_liter
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.WINESKIN,
+                R.string.unit_wineskin
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.BEER_MUG,
+                R.string.unit_beer_mug
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.WINE_CUP,
+                R.string.unit_wine_cup
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.SHOT,
+                R.string.unit_shot
         );
         UNIT_LABELS.put(
                 ConversionUnit.MILLILITER,
@@ -209,38 +233,55 @@ public final class ConversionLabels {
                 ConversionUnit.NANOSECOND,
                 R.string.unit_nanosecond
         );
+
+        UNIT_LABELS.put(
+                ConversionUnit.PETABYTE,
+                R.string.unit_petabyte
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.TERABYTE,
+                R.string.unit_terabyte
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.GIGABYTE,
+                R.string.unit_gigabyte
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.MEGABYTE,
+                R.string.unit_megabyte
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.KILOBYTE,
+                R.string.unit_kilobyte
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.BYTE,
+                R.string.unit_byte
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.BIT,
+                R.string.unit_bit
+        );
     }
 
-    private ConversionLabels() {
-    }
+    private ConversionLabels() {}
 
     @StringRes
-    public static int getCategoryLabel(
-            ConversionCategory category
-    ) {
-        Integer labelResId =
-                CATEGORY_LABELS.get(category);
+    public static int getCategoryLabel(ConversionCategory category) {
+        Integer labelResId = CATEGORY_LABELS.get(category);
 
-        if (labelResId == null) {
-            throw new IllegalArgumentException(
-                    "La categoría no tiene una etiqueta registrada"
-            );
-        }
+        if (labelResId == null)
+            throw new IllegalArgumentException("La categoría no tiene una etiqueta registrada");
 
         return labelResId;
     }
 
     @StringRes
-    public static int getUnitLabel(
-            ConversionUnit unit
-    ) {
+    public static int getUnitLabel(ConversionUnit unit) {
         Integer labelResId = UNIT_LABELS.get(unit);
 
-        if (labelResId == null) {
-            throw new IllegalArgumentException(
-                    "La unidad no tiene una etiqueta registrada"
-            );
-        }
+        if (labelResId == null)
+            throw new IllegalArgumentException("La unidad no tiene una etiqueta registrada");
 
         return labelResId;
     }
