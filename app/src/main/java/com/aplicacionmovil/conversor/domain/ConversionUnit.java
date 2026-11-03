@@ -358,6 +358,7 @@ public enum ConversionUnit {
             ConversionCategory.AREA,
             "mm²",
             0.000001
+    ),
     PASCAL(
             ConversionCategory.PRESSURE,
             "Pa",
