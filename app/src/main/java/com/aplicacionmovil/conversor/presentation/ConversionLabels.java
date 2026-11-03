@@ -46,6 +46,8 @@ public final class ConversionLabels {
         CATEGORY_LABELS.put(
                 ConversionCategory.AREA,
                 R.string.category_area
+        );
+        CATEGORY_LABELS.put(
                 ConversionCategory.PRESSURE,
                 R.string.category_pressure
         );
@@ -203,7 +205,6 @@ public final class ConversionLabels {
                 ConversionUnit.ATMOSPHERE,
                 R.string.unit_atmosphere
         );
-    }
 
         UNIT_LABELS.put(
                 ConversionUnit.CENTURY,

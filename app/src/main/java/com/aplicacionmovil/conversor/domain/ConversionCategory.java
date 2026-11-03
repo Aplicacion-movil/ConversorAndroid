@@ -8,7 +8,7 @@ public enum ConversionCategory {
     SPEED("speed"),
     TIME("time"),
     COMPUTING("computing"),
-    AREA("area");
+    AREA("area"),
     PRESSURE("pressure");
 
     private final String key;
