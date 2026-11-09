@@ -39,12 +39,17 @@
     <string name="category_area">Área</string>
     <string name="category_pressure">Presión</string>
 
+    <string name="unit_lengua">Lengua (l)</string>
+    <string name="unit_braza">Braza (b)</string>
+    <string name="unit_vara">Vara (v)</string>
     <string name="unit_meter">Metro (m)</string>
+    <string name="unit_codo">Codo (c)</string>
     <string name="unit_kilometer">Kilómetro (km)</string>
+    <string name="unit_pie">Pie (p)</string>
     <string name="unit_centimeter">Centímetro (cm)</string>
     <string name="unit_millimeter">Milímetro (mm)</string>
     <string name="unit_mile">Milla (mi)</string>
-    <string name="unit_foot">Pie (ft)</string>
+    <string name="unit_foot">Foot (ft)</string>
     <string name="unit_inch">Pulgada (in)</string>
 
     <string name="unit_celsius">Celsius (°C)</string>
@@ -56,13 +61,18 @@
     <string name="unit_kilogram">Kilogramo (kg)</string>
     <string name="unit_hectogram">Hectogramo (hg)</string>
     <string name="unit_decagram">Decagramo (dkg)</string>
+    <string name="unit_libra">Libra (l)</string>
+    <string name="unit_cuateron">Cuateron (c)</string>
+    <string name="unit_onza">Onza (o)</string>
+    <string name="unit_ochava">Ochava (och)</string>
+    <string name="unit_adarme">Adarme (a)</string>
     <string name="unit_gram">Gramo (g)</string>
     <string name="unit_decigram">Decigramo (dg)</string>
     <string name="unit_centigram">Centigramo (cg)</string>
     <string name="unit_miligram">Miligramo (mg)</string>
     <string name="unit_microgram">Microgramo (mcg)</string>
-    <string name="unit_pound">Libra (lb)</string>
-    <string name="unit_ounce">Onza (oz)</string>
+    <string name="unit_pound">Pound (lb)</string>
+    <string name="unit_ounce">Ounce (oz)</string>
 
     <string name="unit_liter">Litro (L)</string>
     <string name="unit_milliliter">Mililitro (mL)</string>
