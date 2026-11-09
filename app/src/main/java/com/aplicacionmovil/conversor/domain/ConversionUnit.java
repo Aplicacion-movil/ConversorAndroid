@@ -23,15 +23,40 @@ package com.aplicacionmovil.conversor.domain;
  */
 
 public enum ConversionUnit {
+    LENGUA(
+            ConversionCategory.LENGTH,
+            "l",
+            5570
+    ),
+    BRAZA(
+            ConversionCategory.LENGTH,
+            "b",
+            1.67
+    ),
     METER(
             ConversionCategory.LENGTH,
             "m",
             1.0
     ),
+    VARA(
+            ConversionCategory.LENGTH,
+            "v",
+            0.8359
+    ),
+    CODO(
+            ConversionCategory.LENGTH,
+            "c",
+            0.418
+    ),
     KILOMETER(
             ConversionCategory.LENGTH,
             "km",
             1000.0
+    ),
+    PIE(
+            ConversionCategory.LENGTH,
+            "p",
+            0.2786
     ),
     CENTIMETER(
             ConversionCategory.LENGTH,
@@ -103,6 +128,31 @@ public enum ConversionUnit {
             ConversionCategory.MASS,
             "dkg",
             0.01
+    ),
+    LIBRA(
+            ConversionCategory.MASS,
+            "l",
+            0.46
+    ),
+    CUARTERON(
+            ConversionCategory.MASS,
+            "c",
+            0.115
+    ),
+    ONZA(
+            ConversionCategory.MASS,
+            "o",
+            0.02876
+    ),
+    OCHAVA(
+            ConversionCategory.MASS,
+            "och",
+            0.00359
+    ),
+    ADARME(
+            ConversionCategory.MASS,
+            "a",
+            0.0018
     ),
     GRAM(
             ConversionCategory.MASS,

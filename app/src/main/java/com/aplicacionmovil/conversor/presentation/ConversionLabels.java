@@ -53,12 +53,32 @@ public final class ConversionLabels {
         );
 
         UNIT_LABELS.put(
-                ConversionUnit.METER,
-                R.string.unit_meter
+                ConversionUnit.LENGUA,
+                R.string.unit_lengua
         );
         UNIT_LABELS.put(
                 ConversionUnit.KILOMETER,
                 R.string.unit_kilometer
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.BRAZA,
+                R.string.unit_braza
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.METER,
+                R.string.unit_meter
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.VARA,
+                R.string.unit_vara
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.CODO,
+                R.string.unit_codo
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.PIE,
+                R.string.unit_pie
         );
         UNIT_LABELS.put(
                 ConversionUnit.CENTIMETER,
@@ -113,6 +133,26 @@ public final class ConversionLabels {
         UNIT_LABELS.put(
                 ConversionUnit.DECAGRAM,
                 R.string.unit_decagram
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.LIBRA,
+                R.string.unit_libra
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.CUARTERON,
+                R.string.unit_cuateron
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.ONZA,
+                R.string.unit_onza
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.OCHAVA,
+                R.string.unit_ochava
+        );
+        UNIT_LABELS.put(
+                ConversionUnit.ADARME,
+                R.string.unit_adarme
         );
         UNIT_LABELS.put(
                 ConversionUnit.GRAM,
