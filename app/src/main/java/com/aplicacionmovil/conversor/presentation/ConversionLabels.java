@@ -51,6 +51,10 @@ public final class ConversionLabels {
                 ConversionCategory.PRESSURE,
                 R.string.category_pressure
         );
+        CATEGORY_LABELS.put(
+                ConversionCategory.FINE,
+                R.string.category_fine
+        );
 
         UNIT_LABELS.put(
                 ConversionUnit.LENGUA,

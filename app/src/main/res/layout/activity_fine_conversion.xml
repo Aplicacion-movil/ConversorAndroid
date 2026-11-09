@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/conversion_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/category_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/speed_unit_label"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/input_speed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="@string/input_speed_hint"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal|numberSigned"
+            android:maxLines="1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/alcohol_unit_label"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/input_alcohol"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:hint="@string/input_alcohol_hint"
+            android:importantForAutofill="no"
+            android:inputType="numberDecimal|numberSigned"
+            android:maxLines="1" />
+
+        <Switch
+            android:id="@+id/novel_driver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/novel_driver_switch" />
+
+        <Button
+            android:id="@+id/convert_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/convert_button" />
+
+        <TextView
+            android:id="@+id/result_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="?attr/colorSurfaceVariant"
+            android:gravity="center"
+            android:minHeight="72dp"
+            android:padding="16dp"
+            android:text="@string/result_placeholder"
+            android:textIsSelectable="true"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/choose_another_category" />
+
+    </LinearLayout>
+
+</ScrollView>
