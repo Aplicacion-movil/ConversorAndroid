@@ -24,7 +24,12 @@
 
     <string name="input_value_hint">Introduce un valor</string>
     <string name="source_unit_label">Unidad de origen</string>
+    <string name="speed_unit_label">Velocidad superior a la permitida</string>
+    <string name="alcohol_unit_label">Alcohol consumido</string>
+    <string name="novel_driver_switch">Conductor novel</string>
     <string name="target_unit_label">Unidad de destino</string>
+    <string name="input_speed_hint">Introduce un valor</string>
+    <string name="input_alcohol_hint">Introduce un valor</string>
     <string name="convert_button">Convertir</string>
     <string name="result_placeholder">El resultado aparecerá aquí</string>
     <string name="choose_another_category">Elegir otra categoría</string>
@@ -38,6 +43,7 @@
     <string name="category_computing">Informática</string>
     <string name="category_area">Área</string>
     <string name="category_pressure">Presión</string>
+    <string name="category_fine">Multa</string>
 
     <string name="unit_lengua">Lengua (l)</string>
     <string name="unit_braza">Braza (b)</string>
@@ -136,5 +142,6 @@
         <item>@string/category_computing</item>
         <item>@string/category_area</item>
         <item>@string/category_pressure</item>
+        <item>@string/category_fine</item>
     </string-array>
 </resources>

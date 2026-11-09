@@ -27,7 +27,8 @@ public class SelectionActivity extends AppCompatActivity {
             R.drawable.category_time,
             R.drawable.category_computing,
             R.drawable.category_area,
-            R.drawable.category_pressure
+            R.drawable.category_pressure,
+            R.drawable.category_fine
     };
 
     private View rootView;
@@ -117,10 +118,21 @@ public class SelectionActivity extends AppCompatActivity {
 
         ConversionCategory category = categories[categoryIndex];
 
-        Intent intent = new Intent(this, ConversionActivity.class);
+        Intent intent;
 
-        intent.putExtra(ConversionActivity.EXTRA_CATEGORY, category.getKey());
+        if (category == ConversionCategory.FINE) {
+            intent = new Intent(this, FineConversionActivity.class);
 
-        startActivity(intent);
+            intent.putExtra(FineConversionActivity.EXTRA_CATEGORY, category.getKey());
+
+            startActivity(intent);
+        }
+        else {
+            intent = new Intent(this, ConversionActivity.class);
+
+            intent.putExtra(ConversionActivity.EXTRA_CATEGORY, category.getKey());
+
+            startActivity(intent);
+        }
     }
 }
