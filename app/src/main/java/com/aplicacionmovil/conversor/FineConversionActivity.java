@@ -89,6 +89,11 @@ public class FineConversionActivity extends AppCompatActivity {
             String value = conversionEngine.convert(speed.intValue(), alcohol, nobelDriver.isChecked());
 
             resultView.setText(value);
+            Snackbar.make(
+                    rootView,
+                    R.string.conversion_success,
+                    Snackbar.LENGTH_SHORT
+            ).show();
         } catch (IllegalArgumentException exception) {
             showError(R.string.conversion_error);
         }

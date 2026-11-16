@@ -180,6 +180,11 @@ public class ConversionActivity extends AppCompatActivity {
                             formatNumber(convertedValue),
                             targetUnit.getSymbol()
                     ));
+            Snackbar.make(
+                    rootView,
+                    R.string.conversion_success,
+                    Snackbar.LENGTH_SHORT
+            ).show();
         } catch (IllegalArgumentException exception) {
             showError(R.string.conversion_error);
         }
