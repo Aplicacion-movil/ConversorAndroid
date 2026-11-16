@@ -19,6 +19,7 @@
     <string name="invalid_input">Introduce un número válido</string>
     <string name="invalid_unit">Selecciona unidades válidas</string>
     <string name="conversion_error">No se ha podido realizar la conversión</string>
+    <string name="conversion_success">Conversión correcta</string>
 
     <string name="result_format">%1$s %2$s = %3$s %4$s</string>
 
