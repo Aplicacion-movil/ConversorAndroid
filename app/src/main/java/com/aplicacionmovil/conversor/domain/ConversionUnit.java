@@ -105,7 +105,7 @@ public enum ConversionUnit {
     RANKIRE(
             ConversionCategory.TEMPERATURE,
             "R",
-            0.0,
+            5.0 / 9.0,
             491.67
     ),
 
